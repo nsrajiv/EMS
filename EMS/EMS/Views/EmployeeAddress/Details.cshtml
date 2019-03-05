@@ -1,0 +1,99 @@
+﻿@model EMS.Models.tbl_EmployeeAddress
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tbl_EmployeeAddress</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tbl_city_master.code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbl_city_master.code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbl_country_master.code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbl_country_master.code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbl_Employee.empno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbl_Employee.empno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbl_state_master.code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbl_state_master.code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ispermanant)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ispermanant)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.addressline1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.addressline1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.addressline2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.addressline2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
